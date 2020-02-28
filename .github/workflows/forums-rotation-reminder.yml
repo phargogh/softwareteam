@@ -1,0 +1,24 @@
+name: Forums rotations reminder
+on:
+    schedule:
+        # Crontab assumes UTC
+        # UTC-5 is Eastern time, I'm aiming for 9am eastern/2pm UTC.
+        # Job should run every Monday at 2pm UTC
+        - cron: "0 14 * * 1"
+
+jobs:
+    slack-notify:
+        name: Slack notification
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+
+            - uses: actions/setup-python@v1
+              with:
+                  python-version: 3.7
+
+            - name: Install python dependencies
+              run: pip install -r ./forums-rotation/requirements.txt
+
+            - name: Send notification
+              run: python ./forums-rotation/whos-on-rotation.py
