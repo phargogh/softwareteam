@@ -1,6 +1,7 @@
-import os
 import datetime
+import os
 import pprint
+import sys
 
 import slack
 
@@ -15,7 +16,7 @@ NOTIFICATION = (
 )
 
 
-def whos_on_rotation_today():
+def whos_on_rotation_today(dry_run=False):
     """Determine who's on rotation today and send a slack message.
 
     This program assumes that a file, ``rotations.txt`` exists in the same
@@ -29,10 +30,22 @@ def whos_on_rotation_today():
 
     This program assumes that it will run on the dates listed in the file.
 
+    Parameters:
+        dry_run=False (bool): Whether to exit after authenticating the slack
+            client.  Useful for ensuring that the program imports on a push to
+            github actions.
+
     Returns:
         ``None``.
 
     """
+    client = slack.WebClient(token=os.environ['SLACK_API_TOKEN'])
+
+    if dry_run:
+        print('Slack client authenticated as expected.')
+        print('Dry run -- exiting.')
+        return
+
     rotations_filepath = os.path.join(
         os.path.dirname(__file__), 'rotations.txt')
 
@@ -45,8 +58,6 @@ def whos_on_rotation_today():
                 continue
 
             elif date == TODAY:
-                client = slack.WebClient(token=os.environ['SLACK_API_TOKEN'])
-
                 client.chat_postMessage(
                     channel='#softwareteam',
                     mrkdwn=True,
@@ -55,7 +66,7 @@ def whos_on_rotation_today():
                     unfurl_media=False,
                     text=NOTIFICATION.format(
                         date=TODAY.strftime('%B %d, %Y'),
-                        name=whos_on_rotation)
+                        name=name)
                 )
                 return None
 
@@ -70,4 +81,4 @@ def whos_on_rotation_today():
 
 
 if __name__ == '__main__':
-    whos_on_rotation_today()
+    whos_on_rotation_today(dry_run='--dry-run' in sys.argv)

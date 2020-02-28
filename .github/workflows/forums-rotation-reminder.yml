@@ -1,5 +1,6 @@
 name: Forums rotations reminder
 on:
+    push
     schedule:
         # Crontab assumes UTC
         # UTC-5 is Eastern time, I'm aiming for 9am eastern/2pm UTC.
@@ -20,5 +21,10 @@ jobs:
             - name: Install python dependencies
               run: pip install -r ./forums-rotation/requirements.txt
 
+            # Might as well run this every time, both on push and schedule
+            - name: Test that everything imports
+              run: python ./forums-rotation/whos-on-rotation.py --dry-run
+
             - name: Send notification
+              if: github.event_name == 'schedule'
               run: python ./forums-rotation/whos-on-rotation.py
