@@ -1,62 +1,73 @@
 import os
 import datetime
+import pprint
 
 import slack
 
 
 TODAY = datetime.date.today()
-NOTIFICATION = """*Forums Rotations for the week of {date}* :tada:
+NOTIFICATION = (
+    '*Forums Rotations for the week of {date}* :tada:\n'
+    '\n'
+    'Just a friendly reminder that {name} is on forums support '
+    'rotation this week! For the full rotations schedule, take a look at the '
+    'list https://github.com/natcap/softwareteam.'
+)
 
-Just a friendly reminder that <{username}> is on forums support rotation
-this week! For the full rotations schedule, take a look at the list
-https://github.com/natcap/softwareteam.
-"""
-
-# TODO: message a person directly (see:
-#     https://stackoverflow.com/a/36463098/299084)
-# TODO: GH Actions cron
-# TODO: Document the OAuth scopes required to make this bot happen
-# TODO: test this on my own direct channel if at all possible so I don't spam
-#     #softwareteam
 
 def whos_on_rotation_today():
-    with open('rotations.txt') as rotations:
+    """Determine who's on rotation today and send a slack message.
+
+    This program assumes that a file, ``rotations.txt`` exists in the same
+    directory as this file, and that the file contains lines like so::
+
+        2020-02-24 James
+
+    Each line must have one date in the format year-month-day and a name, with
+    the two values separated by a space.  The file must also be in sorted
+    order, with later dates being listed farther down the file.
+
+    This program assumes that it will run on the dates listed in the file.
+
+    Returns:
+        ``None``.
+
+    """
+    rotations_filepath = os.path.join(
+        os.path.dirname(__file__), 'rotations.txt')
+
+    with open(rotations_filepath) as rotations:
         for line in rotations:
-            date_string, slack_user_string = line.rstrip().split(' ')
+            date_string, name = line.rstrip().split(' ')
             date = datetime.datetime.strptime(date_string, '%Y-%m-%d').date()
-            print(date, TODAY)
+
             if date < TODAY:
-                if TODAY - datetime.timedelta(weeks=1) < date:
-                    print('Today is not an alert day, but %s is on rotation.' %
-                          slack_user_string)
-                    return None
-                else:
-                    print('%s has already passed' % date_string)
-                    continue
+                continue
+
             elif date == TODAY:
-                print('Today is an alert day and %s is on rotation!' %
-                      slack_user_string)
-                return slack_user_string
-            else:
+                client = slack.WebClient(token=os.environ['SLACK_API_TOKEN'])
+
+                client.chat_postMessage(
+                    channel='#softwareteam',
+                    mrkdwn=True,
+                    link_names=True,
+                    parse='full',
+                    unfurl_media=False,
+                    text=NOTIFICATION.format(
+                        date=TODAY.strftime('%B %d, %Y'),
+                        name=whos_on_rotation)
+                )
                 return None
 
+            else:
+                raise AssertionError(
+                    'This program is running on a schedule that is '
+                    'out-of-sync with the dates in rotations.txt. Both should '
+                    'refer to Mondays.')
 
-def send_slack_message(whos_on_rotation):
-    client = slack.WebClient(token=os.environ['SLACK_API_TOKEN'])
-    client.chat_postMessage(
-        channel='softwareteam',
-        link_names=True,
-        text=NOTIFICATION.format(
-            date=TODAY.strftime('%B %d, %Y'),
-            username=whos_on_rotation)
-    )
-
-
-def main():
-    whos_on_rotation = whos_on_rotation_today()
-    if whos_on_rotation:
-        send_slack_message(whos_on_rotation)
+        raise ValueError(
+            'We need to add more forums assignments to rotations.txt!')
 
 
 if __name__ == '__main__':
-    main()
+    whos_on_rotation_today()
