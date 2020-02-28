@@ -1,6 +1,8 @@
 name: Forums rotations reminder
 on:
-    push
+    push:
+        branches:
+            - master
     schedule:
         # Crontab assumes UTC
         # UTC-5 is Eastern time, I'm aiming for 9am eastern/2pm UTC.
