@@ -33,14 +33,26 @@ def main(args):
 
     parsed_args = parser.parse_args(args)
 
+    last_date = None
     with open(os.path.join(os.path.dirname(__file__),
                            'rotations.txt')) as rotations_file:
-        last_4_lines = rotations_file.read().strip().split('\n')[-4:]
-        names = [line.split(' ')[1] for line in last_4_lines]
+        # Determine the order of team members based on the latest known
+        # non-repeating names.  This extra (mild) complexity is helpful for
+        # whenever we hire again.
+        names = []  # In chronological order, pos. 0 is earliest.
+        for line in reversed(rotations_file.read().strip().split('\n')):
+            date, name = line.split(' ')
 
-    last_date_string = last_4_lines[-1].split(' ')[0]
-    last_date = datetime.datetime.strptime(
-        last_date_string, DATE_FMT).date()
+            if name in names:
+                break
+
+            if not last_date:
+                last_date = datetime.datetime.strptime(
+                    date, DATE_FMT).date()
+
+            # Insert team_members in increasing chronological order of latest
+            # known forums rotation assignment.
+            names.insert(0, name)
 
     one_week = datetime.timedelta(days=7)
     for index, name in zip(
