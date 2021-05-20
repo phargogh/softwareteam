@@ -38,6 +38,9 @@ For strategic priorities, be sure to list:
 
 ## What we're working on
 
+This section may include specific projects or more general areas of improvement
+that are less user facing but that are important for us to address.
+
 ### May 2021
 
 * Workbench refactor
