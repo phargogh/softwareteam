@@ -41,15 +41,25 @@ For strategic priorities, be sure to list:
 This section may include specific projects or more general areas of improvement
 that are less user facing but that are important for us to address.
 
+<!--
+
+For each item, be sure to include:
+  1. The item we're working on (just the title or a reference label is fine)
+  2. Links to any relevant github issues/projects/repos/etc for an overview
+  3. Estimated completion date
+  4. The strategic objectives (from above) that the task contributes to.
+
+-->
+
 ### May 2021
 
-* Workbench refactor
+* Workbench refactor (est: June 2021)
   * Strategic Priorities: Expand User Base, Maintain InVEST
-* Stormwater model (InVEST issue, PR)
+* Stormwater model (InVEST issue, PR) (est June 2021)
   * Strategic Priorities: New InVEST Models
-* Translations in InVEST
+* Translations in InVEST (est: Summer/Fall 2021)
   * Strategic Priorities: Expand User Base
-* Global Viewer project
+* Global Viewer project (est: June 2021)
   * Strategic Priorities: Expand User Base
 
 ### On Deck
@@ -57,7 +67,9 @@ that are less user facing but that are important for us to address.
 This section identifies an unordered set of projects that we believe make sense
 to begin work on soon that are in line with current strategic priorities.
 
-* Urban computation prototype
+* Urban computation prototype (est: Summer/Fall 2021)
   * Strategic Priorities: Expand User Base
-* InVEST 3.9.1 release
+* InVEST 3.9.1 release (est: May 2021)
+  * Strategic Priorities: Maintain InVEST
+* InVEST 3.10.0 release (est: Summer/Fall 2021)
   * Strategic Priorities: Maintain InVEST
