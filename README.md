@@ -53,7 +53,7 @@ For each item, be sure to include:
 
 ### May 2021
 
-* Workbench refactor (est: June 2021)
+* Workbench refactor (est: July 2021)
   * Strategic Priorities: Expand User Base, Maintain InVEST
 * Stormwater model (InVEST issue, PR) (est June 2021)
   * Strategic Priorities: New InVEST Models
@@ -69,7 +69,7 @@ to begin work on soon that are in line with current strategic priorities.
 
 * Urban computation prototype (est: Summer/Fall 2021)
   * Strategic Priorities: Expand User Base
-* InVEST 3.9.1 release (est: May 2021)
+* InVEST 3.9.1 release (est: June 2021)
   * Strategic Priorities: Maintain InVEST
 * InVEST 3.10.0 release (est: Summer/Fall 2021)
   * Strategic Priorities: Maintain InVEST
