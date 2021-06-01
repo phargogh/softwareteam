@@ -73,3 +73,5 @@ to begin work on soon that are in line with current strategic priorities.
   * Strategic Priorities: Maintain InVEST
 * InVEST 3.10.0 release (est: Summer/Fall 2021)
   * Strategic Priorities: Maintain InVEST
+* Workbench Beta Release (est: with the 3.10 release)
+  * Strategic Priorities: Expand User Base
