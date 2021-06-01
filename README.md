@@ -1,6 +1,6 @@
 # Software Team Priorities
 
-Last updated: May 17, 2021
+Last updated: June 1, 2021
 
 ## Strategic Priorities for June-August 2021
 
