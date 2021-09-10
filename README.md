@@ -21,7 +21,7 @@ For strategic priorities, be sure to list:
 
    1. Developing and supporting reproducible data pipelines that reduce
       the effort in keeping Ecosystem Service assessments current, and
-   2. Maintaining data-access APIs as an endpoint of these workflows
+   2. Creating and maintaining data-access APIs as an endpoint of these workflows
       in order to facilitate access to Ecosystem Services information
       and allow the broader community to develop their own creative
       uses for this information.
