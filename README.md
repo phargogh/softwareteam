@@ -1,8 +1,8 @@
 # Software Team Priorities
 
-Last updated: June 1, 2021
+Last updated: September 10, 2021
 
-## Strategic Priorities for June-August 2021
+## Strategic Priorities for September - November 2021
 
 <!--
 For strategic priorities, be sure to list:
@@ -12,29 +12,56 @@ For strategic priorities, be sure to list:
   3. Why the priority matters.
 -->
 
-1. **Expand the user base of InVEST to include users outside of research**
-   Much of the software we've developed over the years has done well as a piece
-   of research software, but the possible funding sources for InVEST in
-   particular are harder to come by. Opening up InVEST to audiences beyond a
-   research community will enable us to expand access to our models and
-   domain-specific workflows, and also be better able to raise money for these
-   efforts.
+1. **Expand the reach and impact of NatCap science and information beyond a
+   research community**
+   In order to inform real-world decisions, the Ecosystem Services analyses and
+   resulting information must be made available and accessible to individuals
+   and organizations outside of the research community. We believe we can
+   accomplish this for NatCap's science and information by:
+        1. Developing and supporting reproducible data pipelines that reduce
+           the effort in keeping Ecosystem Service assessments current, and
+        2. Maintaining data-access APIs as an endpoint of these workflows
+           in order to facilitate access to Ecosystem Services information
+           and allow the broader community to develop their own creative
+           uses for this information.
 
-2. **Support and Maintain InVEST**
+2. **Expand the user base of InVEST to include more of the research and
+   modeling community**
+   While some consumers of NatCap's science and information will only require
+   access to existing workflows and results, others have unique use cases
+   requiring their own analyses. We believe we can lower the barrier for
+   entry for these researchers and expand access by:
+        1. Making the InVEST user interface and documentation more accessible
+           to more users and,
+        2. Maintaining user-friendly programmatic interfaces to the InVEST
+           software.
+
+3. **Build technical capacity among NatCap science teams**
+   We believe that reducing friction for scientists to design and prototype
+   reproducible research workflows for Ecosystem Services analyses would
+   empower our colleagues to do more impactful, reproducible work.  Workflows
+   produced by scientific staff might eventually find support under priority 1.
+   We believe we can do this through high-leverage activities such as:
+        1. Maintaining a cookbook of common development patterns for Ecosystem
+           Services analyses with a focus on InVEST, pygeoprocessing and taskgraph.
+        2. Being available to consult with scientists on their scripting and/or
+           data problems.
+
+4. **Support and Maintain InVEST**
    The continued support and maintenance of InVEST, through bugfixes and user
    support through our forums, is a distinguishing feature of InVEST among
    ecosystem services models, and is a level of support that is rare to find
    among scientific software packages. We believe that maintaining this level
    of support is a crucial component of getting our models into the hands of
-   decision-makers.
+   decision-makers. This support and maintenance is a necessary prerequisite of
+   strategic priorities #2 and #3.
 
-3. **Implement New InVEST Models**
-   As new models are reviewed and approved by the Platform Steering Committee,
-   the software team will implement these models within InVEST and make them
-   available for wider distribution with a subsequent InVEST release. This is
-   an important component of getting the science out there into the real-world
-   and extends beyond simply maintaining what already exists in InVEST.
-
+5. **Implement New InVEST Models**
+   As new high-impact Ecosystem Services science becomes available, producing
+   performant, efficient implementations of these models and supporting them
+   as part of the InVEST suite is a critical step towards getting these models
+   into the hands of decision-makers, and also in enabling other science to
+   use these models in reproducible workflows.
 
 ## What we're working on
 
