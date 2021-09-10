@@ -83,10 +83,10 @@ For each item, be sure to include:
 
 ### September 2021
 
-* Workbench refactor ([repo](https://github.com/natcap/invest-workbench/), [public beta release milestone](ihttps://github.com/natcap/invest-workbench/milestone/2))
+* Workbench refactor ([repo](https://github.com/natcap/invest-workbench/), [public beta release milestone](https://github.com/natcap/invest-workbench/milestone/2))
   * Estimated completion: near InVEST 3.10 release, October 2021
   * Strategic Priorities: Expand research/modeling user base via accessibility, Support and maintain InVEST
-* Stormwater Model ([issue](ihttps://github.com/natcap/invest/issues/504), [PR](https://github.com/natcap/invest/pull/523))
+* Stormwater Model ([issue](https://github.com/natcap/invest/issues/504), [PR](https://github.com/natcap/invest/pull/523))
   * Estimated completion: InVEST 3.10, October 2021
   * Strategic Priorities: New InVEST Models
 * Translations in InVEST ([GH Project](https://github.com/orgs/natcap/projects/3))
