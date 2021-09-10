@@ -18,12 +18,13 @@ For strategic priorities, be sure to list:
    resulting information must be made available and accessible to individuals
    and organizations outside of the research community. We believe we can
    accomplish this for NatCap's science and information by:
-        1. Developing and supporting reproducible data pipelines that reduce
-           the effort in keeping Ecosystem Service assessments current, and
-        2. Maintaining data-access APIs as an endpoint of these workflows
-           in order to facilitate access to Ecosystem Services information
-           and allow the broader community to develop their own creative
-           uses for this information.
+
+   1. Developing and supporting reproducible data pipelines that reduce
+      the effort in keeping Ecosystem Service assessments current, and
+   2. Maintaining data-access APIs as an endpoint of these workflows
+      in order to facilitate access to Ecosystem Services information
+      and allow the broader community to develop their own creative
+      uses for this information.
 
 2. **Expand the user base of InVEST to include more of the research and
    modeling community**
@@ -31,10 +32,11 @@ For strategic priorities, be sure to list:
    access to existing workflows and results, others have unique use cases
    requiring their own analyses. We believe we can lower the barrier for
    entry for these researchers and expand access by:
-        1. Making the InVEST user interface and documentation more accessible
-           to more users and,
-        2. Maintaining user-friendly programmatic interfaces to the InVEST
-           software.
+
+   1. Making the InVEST user interface and documentation more accessible
+      to more users and,
+   2. Maintaining user-friendly programmatic interfaces to the InVEST
+      software.
 
 3. **Build technical capacity among NatCap science teams**
    We believe that reducing friction for scientists to design and prototype
@@ -42,10 +44,11 @@ For strategic priorities, be sure to list:
    empower our colleagues to do more impactful, reproducible work.  Workflows
    produced by scientific staff might eventually find support under priority 1.
    We believe we can do this through high-leverage activities such as:
-        1. Maintaining a cookbook of common development patterns for Ecosystem
-           Services analyses with a focus on InVEST, pygeoprocessing and taskgraph.
-        2. Being available to consult with scientists on their scripting and/or
-           data problems.
+
+   1. Maintaining a cookbook of common development patterns for Ecosystem
+      Services analyses with a focus on InVEST, pygeoprocessing and taskgraph.
+   2. Being available to consult with scientists on their scripting and/or
+      data problems.
 
 4. **Support and Maintain InVEST**
    The continued support and maintenance of InVEST, through bugfixes and user
@@ -78,27 +81,39 @@ For each item, be sure to include:
 
 -->
 
-### May 2021
+### September 2021
 
-* Workbench refactor (est: July 2021)
-  * Strategic Priorities: Expand User Base, Maintain InVEST
-* Stormwater model (InVEST issue, PR) (est June 2021)
+* Workbench refactor ([repo](https://github.com/natcap/invest-workbench/), [public beta release milestone](ihttps://github.com/natcap/invest-workbench/milestone/2))
+  * Estimated completion: near InVEST 3.10 release, October 2021
+  * Strategic Priorities: Expand user base: research/modeling: accessibility, Maintain InVEST
+* Stormwater Model ([issue](ihttps://github.com/natcap/invest/issues/504), [PR](https://github.com/natcap/invest/pull/523))
+  * Estimated completion: InVEST 3.10, October 2021
   * Strategic Priorities: New InVEST Models
-* Translations in InVEST (est: Summer/Fall 2021)
-  * Strategic Priorities: Expand User Base
-* Global Viewer project (est: June 2021)
-  * Strategic Priorities: Expand User Base
+* Translations in InVEST ([GH Project](https://github.com/orgs/natcap/projects/3))
+  * Estimated release: InVEST 3.10, October 2021
+  * Strategic Priorities: Expand user base: research/modeling: accessibility
+* Global Viewer ([GH Project](https://github.com/orgs/natcap/projects/4), [repo](https://github.com/natcap/global-web-viewer))
+  * Estimated completion: October 2021
+  * Strategic Priorities: Expand reach of S&I
+* Office Hours Pilot (Mon/Wed, 11am-12pm PT 9/8-9/27 on slack#natcapsoftwaremodelin)
+  * Estimated completion: pilot finishes 9/27, team will evaluate and adjust accordingly
+  * Strategic Priorities: Build technical capacity
+* Release InVEST 3.9.1
+  * Estimated completion: September 2021
+  * Strategic Priorities: Support and maintain InVEST
+* Release InVEST 3.10
+  * Estimated completion: October 2021
+  * Strategic Priorities: Support and Maintain InVEST, New InVEST Models
+
 
 ### On Deck
 
 This section identifies an unordered set of projects that we believe make sense
 to begin work on soon that are in line with current strategic priorities.
 
-* Urban computation prototype (est: Summer/Fall 2021)
+* Urban computation prototype ([issue](https://github.com/natcap/softwareteam/issues/108))
+  * Estimated start: Fall/Winter 2021
   * Strategic Priorities: Expand User Base
-* InVEST 3.9.1 release (est: June 2021)
-  * Strategic Priorities: Maintain InVEST
-* InVEST 3.10.0 release (est: Summer/Fall 2021)
-  * Strategic Priorities: Maintain InVEST
-* Workbench Beta Release (est: with the 3.10 release)
-  * Strategic Priorities: Expand User Base
+* Urban Greenspace Model ([issue](https://github.com/natcap/softwareteam/issues/93))
+  * Estimated start: Fall/Winter 2021
+  * Strategic Priorities: New InVEST Models
