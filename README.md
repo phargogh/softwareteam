@@ -85,25 +85,26 @@ For each item, be sure to include:
 
 * Workbench refactor ([repo](https://github.com/natcap/invest-workbench/), [public beta release milestone](ihttps://github.com/natcap/invest-workbench/milestone/2))
   * Estimated completion: near InVEST 3.10 release, October 2021
-  * Strategic Priorities: Expand user base: research/modeling: accessibility, Maintain InVEST
+  * Strategic Priorities: Expand research/modeling user base via accessibility, Support and maintain InVEST
 * Stormwater Model ([issue](ihttps://github.com/natcap/invest/issues/504), [PR](https://github.com/natcap/invest/pull/523))
   * Estimated completion: InVEST 3.10, October 2021
   * Strategic Priorities: New InVEST Models
 * Translations in InVEST ([GH Project](https://github.com/orgs/natcap/projects/3))
   * Estimated release: InVEST 3.10, October 2021
-  * Strategic Priorities: Expand user base: research/modeling: accessibility
+  * Strategic Priorities: Expand research/modeling user base via accessibility
 * Global Viewer ([GH Project](https://github.com/orgs/natcap/projects/4), [repo](https://github.com/natcap/global-web-viewer))
   * Estimated completion: October 2021
-  * Strategic Priorities: Expand reach of S&I
-* Office Hours Pilot (Mon/Wed, 11am-12pm PT 9/8-9/27 on slack#natcapsoftwaremodelin)
+  * Strategic Priorities: Expand reach of science and information
+* Office Hours Pilot ([issue](https://github.com/natcap/softwareteam/issues/109))
   * Estimated completion: pilot finishes 9/27, team will evaluate and adjust accordingly
+    * Mon/Wed, 11am-12pm PT 9/8-9/27 on slack#natcapsoftwaremodelin
   * Strategic Priorities: Build technical capacity
 * Release InVEST 3.9.1
   * Estimated completion: September 2021
   * Strategic Priorities: Support and maintain InVEST
 * Release InVEST 3.10
   * Estimated completion: October 2021
-  * Strategic Priorities: Support and Maintain InVEST, New InVEST Models
+  * Strategic Priorities: Support and maintain InVEST, New InVEST models
 
 
 ### On Deck
@@ -111,7 +112,7 @@ For each item, be sure to include:
 This section identifies an unordered set of projects that we believe make sense
 to begin work on soon that are in line with current strategic priorities.
 
-* Urban computation prototype ([issue](https://github.com/natcap/softwareteam/issues/108))
+* Urban Computation Prototype ([issue](https://github.com/natcap/softwareteam/issues/108))
   * Estimated start: Fall/Winter 2021
   * Strategic Priorities: Expand User Base
 * Urban Greenspace Model ([issue](https://github.com/natcap/softwareteam/issues/93))
