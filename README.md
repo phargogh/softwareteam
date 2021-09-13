@@ -22,7 +22,7 @@ For strategic priorities, be sure to list:
 
    1. Developing and supporting reproducible data pipelines that reduce
       the effort in keeping Ecosystem Service assessments current, and
-   2. Maintaining data-access APIs as an endpoint of these workflows
+   2. Creating and maintaining data-access APIs as an endpoint of these workflows
       in order to facilitate access to Ecosystem Services information
       and allow the broader community to develop their own creative
       uses for this information.
@@ -49,7 +49,7 @@ For strategic priorities, be sure to list:
    We believe we can do this through high-leverage activities such as:
 
    1. Maintaining a cookbook of common development patterns for Ecosystem
-      Services analyses with a focus on InVEST, pygeoprocessing and taskgraph.
+      Services analyses with a focus on InVEST, pygeoprocessing, and taskgraph.
    2. Being available to consult with scientists on their scripting and/or
       data problems.
 
