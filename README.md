@@ -14,10 +14,11 @@ For strategic priorities, be sure to list:
 
 1. **Expand the reach and impact of NatCap science and information beyond a
    research community**
-   In order to inform real-world decisions, the Ecosystem Services analyses and
-   resulting information must be made available and accessible to individuals
-   and organizations outside of the research community. We believe we can
-   accomplish this for NatCap's science and information by:
+
+   In order to inform real-world decisions, Ecosystem Services analyses and
+   the resulting information must be made available and accessible to
+   individuals and organizations outside of the research community. We believe
+   we can accomplish this for NatCap's science and information by:
 
    1. Developing and supporting reproducible data pipelines that reduce
       the effort in keeping Ecosystem Service assessments current, and
@@ -28,6 +29,7 @@ For strategic priorities, be sure to list:
 
 2. **Expand the user base of InVEST to include more of the research and
    modeling community**
+
    While some consumers of NatCap's science and information will only require
    access to existing workflows and results, others have unique use cases
    requiring their own analyses. We believe we can lower the barrier for
@@ -39,9 +41,10 @@ For strategic priorities, be sure to list:
       software.
 
 3. **Build technical capacity among NatCap science teams**
+
    We believe that reducing friction for scientists to design and prototype
    reproducible research workflows for Ecosystem Services analyses would
-   empower our colleagues to do more impactful, reproducible work.  Workflows
+   empower our colleagues to do more impactful, reproducible work. Workflows
    produced by scientific staff might eventually find support under priority 1.
    We believe we can do this through high-leverage activities such as:
 
@@ -51,6 +54,7 @@ For strategic priorities, be sure to list:
       data problems.
 
 4. **Support and Maintain InVEST**
+
    The continued support and maintenance of InVEST, through bugfixes and user
    support through our forums, is a distinguishing feature of InVEST among
    ecosystem services models, and is a level of support that is rare to find
@@ -60,6 +64,7 @@ For strategic priorities, be sure to list:
    strategic priorities #2 and #3.
 
 5. **Implement New InVEST Models**
+
    As new high-impact Ecosystem Services science becomes available, producing
    performant, efficient implementations of these models and supporting them
    as part of the InVEST suite is a critical step towards getting these models
