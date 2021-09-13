@@ -33,7 +33,7 @@ For strategic priorities, be sure to list:
    While some consumers of NatCap's science and information will only require
    access to existing workflows and results, others have unique use cases
    requiring their own analyses. We believe we can lower the barrier for
-   entry for these researchers and expand access by:
+   entry for these researchers and expand access to InVEST by:
 
    1. Making the InVEST user interface and documentation more accessible
       to more users and,
