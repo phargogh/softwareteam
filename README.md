@@ -46,7 +46,7 @@ For strategic priorities, be sure to list:
    We believe we can do this through high-leverage activities such as:
 
    1. Maintaining a cookbook of common development patterns for Ecosystem
-      Services analyses with a focus on InVEST, pygeoprocessing and taskgraph.
+      Services analyses with a focus on InVEST, pygeoprocessing, and taskgraph.
    2. Being available to consult with scientists on their scripting and/or
       data problems.
 
