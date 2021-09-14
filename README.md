@@ -110,6 +110,9 @@ For each item, be sure to include:
 * Release InVEST 3.10
   * Estimated completion: October 2021
   * Strategic Priorities: Support and maintain InVEST, New InVEST models
+* Begin an ES Analysis Cookbook ([issue](https://github.com/natcap/softwareteam/issues/113))
+  * Estimated start: Fall 2021
+  * Strategic Priorities: Build technical capacity
 
 
 ### On Deck
